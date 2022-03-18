@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { CartContext } from "../contexts/cartContext";
 export const Navbar = () => {
-  return <div>Cart : {0}</div>;
+  const cartCount = useContext(CartContext);
+  return <div>Cart : {cartCount}</div>;
 };
