@@ -1,7 +1,17 @@
+import { useContext } from "react";
+import { CartContext } from "../contexts/cartContext";
+
 export const Card = () => {
+  const { handleCartUpdate } = useContext(CartContext);
   return (
     <div>
-      <button>Buy Now !</button>
+      <button
+        onClick={() => {
+          handleCartUpdate(1);
+        }}
+      >
+        Buy Now !
+      </button>
     </div>
   );
 };
