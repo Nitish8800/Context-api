@@ -1,10 +1,12 @@
 import "./styles.css";
+import { Navbar } from "./comopnents/Navbar";
+import { Body } from "./comopnents/Body";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Navbar />
+      <Body />
     </div>
   );
 }
